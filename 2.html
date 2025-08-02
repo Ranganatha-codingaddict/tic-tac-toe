@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div id="playerNames"></div>
+    <div class="turn-container">
+        <h3>Turn For</h3>
+        <div class="turn-box align">X</div>
+        <div class="turn-box align">O</div>
+        <div class="bg"></div>
+    </div>
+
+    <div class="main-grid">
+        <!-- Create a total of 64 cells for an 8x8 grid -->
+        <!-- You can generate these dynamically using JavaScript as well -->
+        <div class="box align" id="cell-0"></div>
+        <div class="box align" id="cell-1"></div>
+        <div class="box align" id="cell-2"></div>
+        <div class="box align" id="cell-3"></div>
+        <div class="box align" id="cell-4"></div>
+        <div class="box align" id="cell-5"></div>
+        <div class="box align" id="cell-6"></div>
+        <div class="box align" id="cell-7"></div>
+
+        <div class="box align" id="cell-8"></div>
+        <div class="box align" id="cell-9"></div>
+        <div class="box align" id="cell-10"></div>
+        <div class="box align" id="cell-11"></div>
+        <div class="box align" id="cell-12"></div>
+        <div class="box align" id="cell-13"></div>
+        <div class="box align" id="cell-14"></div>
+        <div class="box align" id="cell-15"></div>
+
+        <div class="box align" id="cell-16"></div>
+        <div class="box align" id="cell-17"></div>
+        <div class="box align" id="cell-18"></div>
+        <div class="box align" id="cell-19"></div>
+        <div class="box align" id="cell-20"></div>
+        <div class="box align" id="cell-21"></div>
+        <div class="box align" id="cell-22"></div>
+        <div class="box align" id="cell-23"></div>
+
+        <div class="box align" id="cell-24"></div>
+        <div class="box align" id="cell-25"></div>
+        <div class="box align" id="cell-26"></div>
+        <div class="box align" id="cell-27"></div>
+        <div class="box align" id="cell-28"></div>
+        <div class="box align" id="cell-29"></div>
+        <div class="box align" id="cell-30"></div>
+        <div class="box align" id="cell-31"></div>
+
+        <div class="box align" id="cell-32"></div>
+        <div class="box align" id="cell-33"></div>
+        <div class="box align" id="cell-34"></div>
+        <div class="box align" id="cell-35"></div>
+        <div class="box align" id="cell-36"></div>
+        <div class="box align" id="cell-37"></div>
+        <div class="box align" id="cell-38"></div>
+        <div class="box align" id="cell-39"></div>
+
+        <div class="box align" id="cell-40"></div>
+        <div class="box align" id="cell-41"></div>
+        <div class="box align" id="cell-42"></div>
+        <div class="box align" id="cell-43"></div>
+        <div class="box align" id="cell-44"></div>
+        <div class="box align" id="cell-45"></div>
+        <div class="box align" id="cell-46"></div>
+        <div class="box align" id="cell-47"></div>
+
+        <div class="box align" id="cell-48"></div>
+        <div class="box align" id="cell-49"></div>
+        <div class="box align" id="cell-50"></div>
+        <div class="box align" id="cell-51"></div>
+        <div class="box align" id="cell-52"></div>
+        <div class="box align" id="cell-53"></div>
+        <div class="box align" id="cell-54"></div>
+        <div class="box align" id="cell-55"></div>
+
+        <div class="box align" id="cell-56"></div>
+        <div class="box align" id="cell-57"></div>
+        <div class="box align" id="cell-58"></div>
+        <div class="box align" id="cell-59"></div>
+        <div class="box align" id="cell-60"></div>
+        <div class="box align" id="cell-61"></div>
+        <div class="box align" id="cell-62"></div>
+        <div class="box align" id="cell-63"></div>
+    </div>
+    <h2 id="results"></h2>
+    <button id="play-again">Play Again</button>
+    <!--Audio elements-->
+    <audio id="click-sound" src="sounds/Click-button.mp3" preload="auto"></audio>
+    <audio id="game-start-sound" src="sounds/game-start.mp3" preload="auto"></audio>
+    <audio id="turn-sound" src="sounds/turn-change.mp3" preload="auto"></audio>
+    <audio id="victory-sound" src="sounds/victory.mp3" preload="auto"></audio>
+    <audio id="draw-sound" src="sounds/draw.mp3" preload="auto"></audio>
+    <script src="2.js"></script>
+</body>
+</html>

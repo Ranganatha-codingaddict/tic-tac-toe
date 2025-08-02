@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div id="playerNames"></div>
+    <div class="turn-container">
+        <h3>Turn For</h3>
+        <div class="turn-box align">X</div>
+        <div class="turn-box align">O</div>
+        <div class="bg"></div>
+    </div>
+
+    <div class="main-grid">
+        <!-- Create a 3x3 grid -->
+        <div class="box align" id="cell-0"></div>
+        <div class="box align" id="cell-1"></div>
+        <div class="box align" id="cell-2"></div>
+        <div class="box align" id="cell-3"></div>
+        <div class="box align" id="cell-4"></div>
+        <div class="box align" id="cell-5"></div>
+        <div class="box align" id="cell-6"></div>
+        <div class="box align" id="cell-7"></div>
+        <div class="box align" id="cell-8"></div>
+    </div>
+
+    <h2 id="results"></h2>
+    <button id="play-again">Play Again</button>
+
+    <!-- Audio elements -->
+    <audio id="click-sound" src="sounds/Click-button.mp3" preload="auto"></audio>
+    <audio id="game-start-sound" src="sounds/game-start.mp3" preload="auto"></audio>
+    <audio id="turn-sound" src="sounds/turn-change.mp3" preload="auto"></audio>
+    <audio id="victory-sound" src="sounds/victory.mp3" preload="auto"></audio>
+    <audio id="draw-sound" src="sounds/draw.mp3" preload="auto"></audio>
+
+    <script src="1.js"></script>
+</body>
+</html>

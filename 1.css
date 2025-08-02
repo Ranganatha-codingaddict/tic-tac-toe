@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.align {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("images/second.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+.turn-container {
+    width: 180px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+.turn-container .turn-box {
+    border: 3px solid #daf108;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+.turn-box {
+    border: 2px solid #daf108;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% / 2);
+    height: 40%;
+    background-color: #ff2e63;
+    z-index: -1;
+    transition: left 0.3s ease-in-out;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 300px;
+    margin: 30px auto;
+    border: 2px solid #daf108;
+}
+
+#results {
+    margin-top: 20px;
+    color: #FFD700;
+}
+
+#play-again {
+    background-color: #ff2e63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+}
+
+#play-again:hover {
+    background-color: #38efec;
+    color: #000;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #daf108;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #ff2e63;
+}
+h3{
+    color: #FFD700;
+} 
+#play-again{
+    color:#FFD700;
+}

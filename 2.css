@@ -1,0 +1,171 @@
+* {
+    color: #daf108;
+    font-family: Arial, sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("images/thirdbg.jpg");
+    margin: 1;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 15vh;
+    background-size: cover;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #daf108;
+}
+
+.turn-container {
+    width: 180px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 30px; /* Adjust top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+.turn-container .turn-box {
+    border: 3px solid #000;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+.turn-box {
+    border: 2px solid #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px; /* Adjust line height as needed */
+    cursor: pointer;
+}
+
+.turn-box.turn-highlight {
+    background-color: rgb(222, 154, 28); /* Adjust highlight color as needed */
+    color: #daf108; /* Adjust text color as needed */
+}
+
+.turn-highlight {
+    background-color: rgb(222, 154, 28);
+    color: #daf108;
+    font-weight: bold;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% / 2); /* Adjusted width to fit 8 columns */
+    height: 40%;
+    background-color: #FF2E63;
+    z-index: -1;
+    transition: left 0.3s ease-in-out; /* Added transition for smooth movement */
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 400px;
+    width: 400px;
+    margin: 30px auto;
+    border: 2px solid #000;
+}
+
+#results {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+#play-again {
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hide the button */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+#play-again:hover {
+    background-color: #38efec;
+    color: #000;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF6347; /* Set text color to orange (Tomato) */
+}
+
+.box:hover {
+    background-color: #FF2E63;
+}
+
+#play-again {
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #38efec;
+    color: #000;
+}
+
+h3 {
+    color: #FFD700;
+}
+
+#play-again {
+    color: #FFD700;
+}
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF6347; /* Set text color to orange (Tomato) */
+}
